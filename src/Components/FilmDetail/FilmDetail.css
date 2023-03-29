@@ -1,4 +1,3 @@
-
 .FilmDetail {
   display: flex;
   min-height: 100vh;
@@ -25,6 +24,15 @@
 .FilmDetail .film-backdrop {
   position: relative;
 }
+.youtube-button .MuiSvgIcon-root {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 5rem;
+  color: red;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
 
 .FilmDetail .film-title {
   position: absolute;
@@ -34,7 +42,7 @@
   color: white;
   font-size: 4em;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(180deg, transparent, rgba(0,0,0,0.5));
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.5));
   padding: 0.25em 1.5rem;
 }
 
@@ -50,4 +58,38 @@
   line-height: 1.45;
   color: white;
   background-color: lightseagreen;
+}
+.modal {
+  position: absolute;
+  right: 7px;
+  top: 13px;
+  width: 100%;
+  z-index: 20;
+}
+.close-button {
+  position: inherit;
+  top: 3px;
+  right: 8px;
+  z-index: 30;
+}
+@media only screen and (max-width: 768px) {
+  /* adjust styling for smaller screens */
+  .FilmDetail .film-backdrop {
+    height: 30vh;
+  }
+
+  .FilmDetail .film-title {
+    font-size: 2.5em;
+    padding: 0.25em 1rem;
+  }
+
+  .FilmDetail .film-detail-poster {
+    width: 30%;
+  }
+  .modal {
+    top: 0;
+    left: 50%;
+    width: 80vw;
+    transform: translateX(-50%);
+  }
 }

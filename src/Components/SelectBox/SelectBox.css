@@ -1,0 +1,20 @@
+select {
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25em;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+select:focus {
+  border-color: rgb(40, 205, 197);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 255, 238, 0.229);
+}
